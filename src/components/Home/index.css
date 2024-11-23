@@ -1,0 +1,51 @@
+.home-cointainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding-top: 10px;
+    width: 90%;
+    max-width: 1110px;
+}
+.home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.home-content h1{
+    font-size: 46px;
+    text-align: left;
+}
+.home-content p{
+    font-family: "Roboto";
+    font-size: 18px;
+    line-height: 28px;
+    color: #64748b;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.home-desktop-img{
+    max-width: 450px;
+    margin-left: 85px;
+}
+
+.shop-now-button{
+    width: 50%;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    padding-top: 12px 0px 12px 0px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 50px;
+    background-color: #0967d2;
+    height: 50px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+.shop-now-button:hover{
+    background-color: #5492da;
+}

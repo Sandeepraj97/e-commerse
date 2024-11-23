@@ -1,0 +1,52 @@
+.nav-header{
+    display: flex;
+    justify-content: center;
+}
+
+nav div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1110px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.logout-icon{
+    width: 160px;
+}
+.nav-menu{
+    display:  flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex: 1;
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.nav-link{
+    font-family: "Roboto";
+    margin: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #475569;
+    text-decoration: none;    
+}
+.logout-desktop-btn{
+    font-family: "Roboto";
+    font-weight: 600;
+    padding: 8px 16px;
+    color: #fff;
+    background-color: #0967d2;
+    border: none;
+    cursor: pointer;
+    transition: color background-color 0.3s;
+    border-radius: 4px;
+    margin-left: 14px;
+}
+.logout-desktop-btn:hover{
+    background-color: #4992e6;
+    color: #b6b6b6;
+}
