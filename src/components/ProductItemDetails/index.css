@@ -1,0 +1,237 @@
+.product-item-details-container{
+    display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .product-item-details-container {
+      margin-top: 64px;
+    }
+  }
+
+.product-details-success-view{
+    width: 85%;
+  max-width: 550px;
+}
+@media screen and (min-width: 768px) {
+    .product-details-success-view {
+      width: 80%;
+      max-width: 1110px;
+    }
+  }
+  
+
+  .product-details-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .product-details-container {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 48px;
+    }
+
+  }
+
+  .product-image {
+    border-radius: 16px;
+    flex-shrink: 0;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .product-image {
+      width: 48%;
+      max-width: 540px;
+      max-height: 576px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .product {
+      width: 48%;
+    }
+  }
+  .product-name{
+    color: rgb(45, 50, 58);
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .product-name {
+      font-size: 48px;
+      margin-top: 0px;
+    }
+  }
+  .product-details{
+    color: #0c83e4;
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+
+
+.rating-and-review-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.rating-cointainer{
+  display: flex;
+  background-color: #0c83e4;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  border-radius: 10px;
+
+}
+
+
+.rating{
+    color: #eff7ff;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 700;
+    
+   
+}
+.start{
+ height: 20px;
+
+}
+.review-count{
+  color: #0b0a0e;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  margin-left: 12px;
+  font-weight: 600;
+}
+.product-discription{
+  color: #616e7c;
+  font-size: 14px;
+  font-family: "Roboto";
+  margin-top: 10px;
+  line-height: 1.3;
+}
+@media screen and (min-width: 768px) {
+  .product-description {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+}
+.availability-cointainer{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.availability{
+  font-weight: 600;
+  font-size: 16px;
+  color: #000000;
+}
+.availability-details{
+  font-size: 16px;
+  font-family: "Roboto";
+}
+.brand-cointainer{
+  display: flex;
+  gap: 10px;
+}
+
+.brand{
+  font-weight: 600;
+  font-size: 16px;
+  color: #000000;
+}
+.brand-details{
+  font-size: 16px;
+  font-family: "Roboto";
+
+}
+.quantity-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap:10px;
+}
+
+.quantity-btn{
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.quantity{
+  color: #616e7c;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .quantity {
+    font-size: 24px;
+  }
+}
+.add-to-cart-btn{
+  background-color: #116feb;
+  color: #ffffff;
+  border: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Roboto";
+  transition: background-color 0.3s;
+}
+.quantity-controller-icon {
+  color: #616e7c;
+  width: 16px;
+  height: 16px;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #5397ce;
+}
+
+.similar-products-heading {
+  color: #3e4c59;
+  font-family: 'Roboto';
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .similar-products-heading {
+    font-size: 32px;
+  }
+}
+
+.similar-products-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .similar-products-list {
+    margin-top: 24px;
+    flex-direction: row;
+    gap: 10px;
+  }
+}

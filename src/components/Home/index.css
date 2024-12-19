@@ -29,15 +29,18 @@
 
 .home-desktop-img{
     max-width: 450px;
+    height: 470px;
     margin-left: 85px;
+    border-radius: 10px;
 }
 
 .shop-now-button{
-    width: 50%;
+    width: 100px;
+    max-width: 200px;
     font-size: 16px;
     font-weight: 400;
     color: #fff;
-    padding-top: 12px 0px 12px 0px;
+    padding-top: 12px 12px 12px 12px;
     border: none;
     border-radius: 6px;
     margin-top: 50px;

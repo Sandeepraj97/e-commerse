@@ -50,3 +50,8 @@ nav div{
     background-color: #4992e6;
     color: #b6b6b6;
 }
+.cart-count-span{
+    color: #4992e6;
+    font-weight: 600;
+    margin-left: 10px;
+}

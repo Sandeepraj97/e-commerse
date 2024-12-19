@@ -1,8 +1,12 @@
 
+
+import { Link } from "react-router-dom/cjs/react-router-dom.min"
 import Header from "../Header"
 import "./index.css"
 
-const Home = () => (
+const Home = () =>{
+  
+    return (
         <>
         <Header />
         <div className="home-cointainer">
@@ -14,7 +18,11 @@ const Home = () => (
                     that way you are. So, celebrate the seasons new and exciting fashion
                     in your own way.
                 </p>
-                <button className="shop-now-button">Shop Now</button>
+                <Link to = "/products">
+                    <button 
+                        className="shop-now-button">Shop Now
+                    </button>
+                </Link>
             </div>
             <img src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-home-img.png"
                  alt="dresses to be noticed"
@@ -22,7 +30,6 @@ const Home = () => (
             />
         </div>
         </>
-    )
-
+)}
 
 export default Home

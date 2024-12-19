@@ -1,0 +1,17 @@
+.header-cointainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sort-by-cointainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.sort-by-name{
+    font-family: "Roboto";
+    font-weight: 600;
+}

@@ -1,7 +1,32 @@
-import { Link } from "react-router-dom"
+import { Link,withRouter } from "react-router-dom"
+import Cookies from "js-cookie"
 
 import "./index.css"
-const Header = ()=>(
+import CartContext from "../../context/CartContext"
+const Header = (props)=>{
+    const{history} = props
+    const onClickLogout = ()=>{
+        Cookies.remove("jwt_token")
+        history.replace("/login")
+    }
+
+    const renderCartItemCount = () =>(
+        <CartContext.Consumer>
+            {
+                value=>{
+                    const {cartList} = value
+                    const cartListCount = cartList.length
+                    return (
+                        <>
+                            { cartListCount >0 ?<span className="cart-count-span">{cartListCount}</span> : null}
+                        </>
+                    )
+                }
+            }
+        </CartContext.Consumer>
+    )
+
+    return (
     <nav className="nav-header">
         <div>
             <img 
@@ -22,13 +47,17 @@ const Header = ()=>(
                 </li>
                 <li>
                     <Link to="/cart" className="nav-link">
-                        Cart
+                        Cart {renderCartItemCount()}
                     </Link>
+                    
                 </li>
             </ul>
-            <button className="logout-desktop-btn">Logout</button>
+            <button 
+                onClick={onClickLogout}
+                className="logout-desktop-btn">Logout
+            </button>
         </div>
     </nav>
-)
+)}
 
-export default Header
+export default withRouter(Header)
